@@ -1,17 +1,16 @@
 package main
-import{
+import (
 	"fmt"
 	"sync"
 	"time"
-}
+)
 
-function woker(id int){
+func woker(id int){
 	fmt.Printf("Woker %d starting\n",id)
 	time.Sleep(time.Second)
 	fmt.Printf("Woker %d done\n",id)
 }
-
-function main(){
+func main(){
 	var wg sync.WaitGroup
 
 	for i:=1;i<=5;i++{
@@ -22,4 +21,5 @@ function main(){
 		}()
 	}
 	wg.Wait()
-}
+}2=/
+//=/=
